@@ -1,5 +1,7 @@
 const option= document.querySelector(".option-container");
 const optionSetting=document.getElementById("option-setting")
+const openNav=document.getElementById("open-nav")
+const navShow=document.querySelectorAll(".hide")
 
 option.addEventListener("mouseover",()=>{
     optionSetting.style.display="block"
@@ -10,3 +12,10 @@ option.addEventListener("mouseover",()=>{
         optionSetting.style.display="none"
     })
 })
+navShow.forEach(element=>{
+    openNav.addEventListener("click",()=>{
+        element.classList.toggle("hide")
+    })
+})
+
+

@@ -11,36 +11,49 @@ body {
 
 nav {
   background: #ab6636;
+  display: flex;
+  justify-content: space-between;
 }
 nav .ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
   cursor: pointer;
 }
 nav .ul li {
   padding: 1rem;
   color: #fff;
+  width: 100vw;
 }
 nav .ul li a {
   text-decoration: none;
   color: #fff;
 }
+nav .ul .hide {
+  display: none;
+}
 nav .ul li:hover {
   background: #f7ba8f;
 }
-nav .option-container {
+nav .ul .option-container {
   display: block;
   list-style: none;
   cursor: default;
 }
-nav .option-container .option-setting {
+nav .ul .option-container .option-setting {
   display: none;
   position: absolute;
   background: #ab6636;
   cursor: pointer;
+  width: 100vw;
 }
-nav .option-container .option-setting:hover {
+nav .ul .option-container .option-setting:hover {
   background: #f7ba8f;
+}
+nav div {
+  padding: 1rem;
+  position: absolute;
+  right: 0;
 }
 
 main {
@@ -122,6 +135,24 @@ main .table-container button {
 }
 main .table-container button:hover {
   background: #f7ba8f;
+}
+
+@media screen and (min-width: 500px) {
+  nav .ul {
+    flex-direction: row;
+  }
+  nav .ul li {
+    width: auto;
+  }
+  nav .ul .hide {
+    display: inline-block;
+  }
+  nav .ul .option-container .option-setting {
+    width: auto;
+  }
+  nav div {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
