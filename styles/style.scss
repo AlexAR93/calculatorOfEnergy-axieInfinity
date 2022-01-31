@@ -1,0 +1,127 @@
+$backgroundAxieCards1:#ffc547;
+$backgroundAxieCards2:#ff9ab8;
+$backgroundAxieCards3:#46caff;
+
+@mixin borderStyleTable {
+    border-collapse: collapse;
+    border:1px #000 solid;
+}
+
+@mixin buttonStyle{
+    border: 2px #333 solid;
+    border-radius: 5px;
+    padding: .4rem;
+    margin: .2rem;
+    background: #ab6636;
+    color: #fff;
+    box-shadow: 0 0 4px #505050;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #be9770;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    background: #ab6636;
+    .ul{
+        list-style: none;
+        display: flex;
+        cursor: pointer;
+        li{
+            padding: 1rem;
+            color: #fff;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        li:hover{
+            background: #f7ba8f;
+        }
+    }
+    .option-container{
+        display: block;
+        list-style: none;
+        cursor: default;
+        .option-setting{
+            display: none;
+            position: absolute;
+            background: #ab6636;
+            cursor: pointer;
+        }
+        .option-setting:hover{
+            background: #f7ba8f;
+        }
+    }
+}
+main{
+    width: 100vw;
+    .accountant-container{
+        color: #432d17;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        img{
+            width: 60px;
+        }
+        .buttons{
+            text-align: center;
+            button{
+                @include buttonStyle();
+                cursor: pointer;
+            }
+            button:hover{
+                background:#f7ba8f;
+            }
+        }
+    }
+    .table-container{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        table{
+            @include borderStyleTable();
+            text-align: center;
+            th{
+                @include borderStyleTable();
+                background: #db7500;
+                width: 7rem;
+                height: 2rem;
+                color: #fff;
+                font-weight: 400;
+            }
+            td{
+                @include borderStyleTable();
+                width: 7rem;
+                height: 2rem;
+                font-weight: 600;
+            }
+            #axie-1{
+                background: $backgroundAxieCards1;
+            }
+            #axie-2{
+                background: $backgroundAxieCards2;
+            }
+            #axie-3{
+                background: $backgroundAxieCards3;
+            }
+        }
+        button{
+            @include buttonStyle();
+            cursor: pointer;
+            margin-top: .6rem;
+        }
+        button:hover{
+            background: #f7ba8f;
+        }
+    }
+}
