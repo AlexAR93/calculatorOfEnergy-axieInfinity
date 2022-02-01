@@ -113,13 +113,13 @@ main .table-container table td {
   height: 2rem;
   font-weight: 600;
 }
-main .table-container table #axie-1 {
+main .table-container table .axie-1 {
   background: #ffc547;
 }
-main .table-container table #axie-2 {
+main .table-container table .axie-2 {
   background: #ff9ab8;
 }
-main .table-container table #axie-3 {
+main .table-container table .axie-3 {
   background: #46caff;
 }
 main .table-container button {

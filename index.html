@@ -28,14 +28,14 @@
     </nav>
     <main>
         <div class="accountant-container">
-            <p>Ronda 1</p>
+            <p id="rounds">Ronda 1</p>
             <img src="/assets/image/energy.png" alt="energy-log">
-            <p>3/10</p>
+            <p id="energy">3/10</p>
             <div class="buttons">
-                <button>-1 ENE</button>
-                <button>+1 ENE</button>
-                <button>SIGUIENTE RONDA</button>
-                <button>NUEVA PARTIDA</button>
+                <button id="subtract-energy">-1 ENE</button>
+                <button id="add-energy">+1 ENE</button>
+                <button id="next-round">SIGUIENTE RONDA</button>
+                <button id="new-game">NUEVA PARTIDA</button>
             </div>
         </div>
         <div class="table-container">
@@ -46,72 +46,74 @@
                     <th>Segunda Aparición</th>
                 </thead>
                 <tbody>
-                    <tr id="axie-1">
+                    <tr class="axie-1">
                         <td>Boca</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-1">
+                    <tr class="axie-1">
                         <td>Cuerno</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-1">
+                    <tr class="axie-1">
                         <td>Espalda</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-1">
+                    <tr class="axie-1">
                         <td>Cola</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-2">
+                    <tr class="axie-2">
                         <td>Boca</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-2">
+                    <tr class="axie-2">
                         <td>Cuerno</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-2">
+                    <tr class="axie-2">
                         <td>Espalda</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-2">
+                    <tr class="axie-2">
                         <td>Cola</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-3">
+                    <tr class="axie-3">
                         <td>Boca</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-3">
+                    <tr class="axie-3">
                         <td>Cuerno</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-3">
+                    <tr class="axie-3">
                         <td>Espalda</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr id="axie-3">
+                    <tr class="axie-3">
                         <td>Cola</td>
                         <td></td>
                         <td></td>
                     </tr>
                 </tbody>
             </table>
-            <button>MEZCLAR CARTAS</button>
+            <button id="mix">MEZCLAR CARTAS</button>
         </div>
     </main>
 
     <script src="/scripts/nav.js"></script>
+    <script src="/scripts/table.js"></script>
+    <script type="module" src="/scripts/accountant-energy.js"></script>
 </body>
 </html>
