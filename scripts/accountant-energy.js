@@ -9,4 +9,4 @@ const rounds=document.getElementById("rounds")
 
 let [currentEnergy,totalEnergy]=energy.textContent.split("/")
 
-utilites.add(addEnergy,subtractEnergy,currentEnergy,energy,totalEnergy,nextRound,newGame,rounds)
+utilites.accountantEnergy(addEnergy,subtractEnergy,currentEnergy,energy,totalEnergy,nextRound,newGame,rounds)

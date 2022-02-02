@@ -18,4 +18,5 @@ navShow.forEach(element=>{
     })
 })
 
-
+import utilities from './_change-language.js'
+utilities.changeLanguaje(optionSetting);
